@@ -41,7 +41,7 @@ class MaxHeap{
         cout<<endl;
     }
 
-    void delete(){
+    void deleteMax(){
         if(size==0){
             cout<<"HEAP is underflow";
             return;
@@ -52,6 +52,24 @@ class MaxHeap{
     if(size==0) return;
 
     Heapify(0);
+
+    }
+
+    void Heapify(int index){
+        int largest=index;
+        int left=2*index+1;
+        int right=2*index+2;
+        //largest will store the index of largest element among index, left and right
+        if(left<size&&arr[left]>arr[largest]){
+            largest=left;
+        }
+        if(right<size&&arr[right]>arr[largest]){
+            largest=right;
+        }
+        if(largest!=index){
+            swap(arr[index],arr[largest]);
+            Heapify(largest);
+        }
 
     }
 
