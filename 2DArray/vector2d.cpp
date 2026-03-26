@@ -14,10 +14,15 @@ int main(){
     //     }
     //     a.push_back(temp);
     // }
-    vector<vector<int> > a(3,vector<int>(4,1));
-    for(int i=0;i<3;i++){
-        for(int j=0;j<4;j++){
-            cout<<a[i][j];
-        }
-    }
+
+
+//initializing the with size and default value
+    // vector<vector<int> > a(3,vector<int>(4,1));
+    // for(int i=0;i<3;i++){
+    //     for(int j=0;j<4;j++){
+    //         cout<<a[i][j];
+    //     }
+    // }
+
+     
 }
