@@ -29,7 +29,7 @@ int arr[]={2,4,5,6,8};
 }
 //print the value
 Node *temp=Head;
-while(temp!=nullptr){
+while(temp!=nullptr){ 
     cout<<temp->data<<" ";
     temp=temp->next;
 }
