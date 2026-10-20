@@ -26,5 +26,12 @@ vector<vector<int>> nonDecreasingSubsequences(vector<int> &nums){
     return result;
 }
 int main(){
-    
+    vector<int> arr{4,6,7,7};
+    vector<vector<int>> result=nonDecreasingSubsequences(arr);
+    for(auto &vec:result){
+        for(auto &val:vec){
+            cout<<val<<" ";
+        }
+        cout<<endl;
+    }
 }
