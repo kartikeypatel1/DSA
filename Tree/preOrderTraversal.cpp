@@ -15,9 +15,9 @@ void preOrderTraversal(Node* root){
     if(root==nullptr){
         return;
     }
+    cout<<root->value<<" ";
     preOrderTraversal(root->left);
     preOrderTraversal(root->right);
-    cout<<root->value<<" ";
 
 }
 
